@@ -1,0 +1,64 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: #f4f4f9;
+}
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+#datetime-picker {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 220px;
+}
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+button:not(:disabled):hover {
+  background-color: #45a049;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+.field {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  transition: transform 0.2s;
+}
+.field:hover {
+  transform: scale(1.05);
+}
+.value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+  color: #333;
+}
+.label {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 5px;
+  display: block;
+}
